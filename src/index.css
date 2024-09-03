@@ -1,0 +1,395 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.158);
+  padding:1rem 4rem ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
+}
+nav img{
+  height: 80px;
+  padding-left: 20px;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  
+}
+a{
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #000;
+}
+.partner{
+  background:black;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 50px;
+}
+.ri-arrow-right-line{
+  font-size: 18px;
+}
+.body-content{
+  padding: 2rem 6rem;
+  margin-top: 8rem;
+  h1{
+    font-size: 5rem;
+    font-weight: 500;
+  }
+  span{
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+.btn{
+  font-size: 18px;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: rgba(218, 165, 32, 0.897);
+  margin-bottom: 5rem;
+}
+.solution{
+  font-size: 36px;
+  padding: 30px 0;
+}
+.cards{
+ display: flex;
+ width: 100%;
+ justify-content: space-around;
+ gap: 2rem;
+}
+.card{
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 0 20px;
+  box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.4);
+  h2{
+    padding-bottom: 3rem;
+    font-size: 36px;
+    color: rgba(218, 165, 32, 0.897);
+    font-weight: 400;
+  }
+  h5{
+    font-size: 18px;
+    font-weight: 400;
+    text-wrap: wrap;
+  }
+}
+.learn-more a{
+  float: right;
+  color: rgba(218, 165, 32, 0.897);
+  margin: 4rem 0;
+}
+.brand{
+  margin-top: 8rem;
+}
+.brand h2{
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 500;
+  padding: 2rem 0;
+  color: rgba(218, 165, 32, 0.897);
+}
+.brand h4{
+  font-size: 30px;
+  font-weight: 300;
+}
+marquee{
+  padding-bottom: 6rem;
+}
+marquee img{
+  filter: grayscale(100%);
+  height: 50px;
+}
+marquee img:hover{
+  filter: grayscale(0);
+}
+.imgbg{
+  background-image: url('./assets/uni.png');
+  backdrop-filter: blur(10px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  border-radius: 0 15rem 0px 0;
+  padding: 5rem;
+}
+.imgbg h1{
+  font-size: 5rem;
+  color: white;
+}
+.connect{
+  text-align: center;
+  position:static;
+  padding-top: 50px;
+}
+.connect h1{
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 4rem;
+}
+.connect button{
+  padding: 20px 40px;
+  border: none;
+  background: rgba(218, 165, 32, 0.897);
+  border-radius: 50px;
+  font-size: 24px;
+  color: white;
+}
+footer{
+  width: 100%;
+  background: #000;
+  border-radius: 0 20rem 0 0 ;
+  padding: 5rem 8rem;
+  color: white;
+  text-align: left;
+}
+footer img{
+  height: 80px;
+  padding: 0;
+}
+footer a{
+  color: gray;
+
+}
+
+table th{
+  text-align: left;
+  padding-right:50px ;
+  padding-bottom: 2rem;
+  align-content: flex-start;  
+}
+.footer-nav{
+  margin-top: 3rem;
+}
+.social-media i{
+  padding-right: 10px;
+  color: gray;
+  font-size: 24px;
+}
+.get{
+  text-align: center;
+  
+  h1{
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  input{
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    width: 30rem;
+    text-align: left;
+    border-radius: 30px;
+    border: none;
+    background: rgba(128, 128, 128, 0.521);
+  }
+  button{
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+    background: rgba(218, 165, 32, 0.897);
+  }
+  .mail{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+@media (max-width: 800px) {
+  nav ul{
+    display: none;
+
+  }
+  
+  .body-content{
+    padding: 4rem 2rem 0 2rem;
+    margin-top: 5rem;
+    h1{
+      font-size: 2rem;
+    }
+  }
+  .solution{
+    font-size: 24px;
+    padding-bottom: 30px ;
+  }
+  .cards{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 2rem;
+  }
+  .card{
+    box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.082);
+  
+  }
+  .learn-more a{
+    margin: 2rem 0;
+  }
+  .brand{
+    margin-top: 5rem;
+  }
+  .brand h2{
+    font-size: 3rem;
+  }
+  .brand h4{
+    font-size: 20px;
+  }
+  marquee{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  marquee img{
+    filter: grayscale(100%);
+    height: 50px;
+  }
+  marquee img:hover{
+    filter: grayscale(0);
+  }
+  .imgbg{
+    background-image: url('./assets/uni.png');
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 0 10rem 0px 0;
+    padding: 5rem;
+  }
+  .imgbg h1{
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .connect{
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+  .connect h1{
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+ 
+  footer{
+    border-radius: 0 10rem 0 0 ;
+  }
+  
+  table th{
+    display: flex;
+  }
+  
+  .get{
+    text-align: center;
+    margin-top: 3rem;
+      
+  }
+}
+@media (max-width: 1020px) {
+  nav ul{
+    display: none;
+
+  }
+  .body-content{
+    margin-top: 4rem;
+    h1{
+      font-size: 3rem;
+    }
+  }
+  .solution{
+    font-size: 24px;
+    padding-bottom: 30px ;
+  }
+  .cards{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 2rem;
+  }
+  .card{
+    box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.082);
+  
+  }
+  .learn-more a{
+    margin: 2rem 0;
+  }
+  .brand{
+    margin-top: 5rem;
+  }
+  .brand h2{
+    font-size: 3rem;
+  }
+  .brand h4{
+    font-size: 20px;
+  }
+  marquee{
+    padding-bottom: 4rem;
+  }
+  marquee img{
+    filter: grayscale(100%);
+    height: 50px;
+  }
+  marquee img:hover{
+    filter: grayscale(0);
+  }
+  .imgbg{
+    background-image: url('./assets/uni.png');
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 0 10rem 0px 0;
+    padding: 5rem;
+  }
+  .imgbg h1{
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .connect{
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+  .connect h1{
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+ 
+  footer{
+    border-radius: 0 10rem 0 0 ;
+  }
+  
+  table th{
+    display: flex;
+  }
+  
+  .get{
+    text-align: center;
+    margin-top: 3rem;
+      
+  }
+}
+
+
+
+/* about page */
+
