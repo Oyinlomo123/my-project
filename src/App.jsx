@@ -20,7 +20,37 @@ const App = () => {
       <Route path='/' element={<Home />}/>
       <Route path="/about" element={<About/>}/>
     </Routes>
-    
+    <footer>
+      <img src={logo} alt="" />
+      <div className="footer-nav">
+       <table>
+        <tr>
+          <th> <a href="#">OUR SOLUTION</a></th>
+          <th> <a href="#">PARTNER WITH US</a></th>
+        </tr>
+        <tr>
+        <th> <a href="#">CAREERS</a></th>
+        <th> <a href="#">AFFILIATE<br/> PARTNERSHIP</a></th>
+        </tr>
+        <tr>
+        <th> <a href="#">ABOUT</a></th>
+        <th> <a href="#">PARTNER WITH US</a></th>
+        </tr>
+       </table>
+       <div className="social-media">
+       <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+       <a href="#"><i class="ri-instagram-line"></i></a>
+       <a href="#"><i class="ri-facebook-fill"></i></a>
+       </div>
+      </div>
+      <div className="get">
+        <h1>Get our corporate new.</h1>
+        <div className="mail">
+        <input type="email" placeholder="email address"/>
+        <button>submit&nbsp;<i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+    </footer>
     </>
   )
 }

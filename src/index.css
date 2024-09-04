@@ -45,8 +45,10 @@ a{
 .ri-arrow-right-line{
   font-size: 18px;
 }
-.body-content{
+.creat{
   padding: 2rem 6rem;
+}
+.body-content{
   margin-top: 8rem;
   h1{
     font-size: 5rem;
@@ -70,10 +72,14 @@ a{
   font-size: 36px;
   padding: 30px 0;
 }
+.all-card{
+  display: flex;
+  justify-content: center;
+}
 .cards{
  display: flex;
- width: 100%;
- justify-content: space-around;
+ width: 85%;
+ justify-content: center;
  gap: 2rem;
 }
 .card{
@@ -93,33 +99,24 @@ a{
     text-wrap: wrap;
   }
 }
+.learn{
+  margin-bottom: 10rem;
+  margin-right: 4rem;
+}
 .learn-more a{
   float: right;
   color: rgba(218, 165, 32, 0.897);
   margin: 4rem 0;
 }
-.brand{
-  margin-top: 8rem;
+
+.marquee{
+  padding:40px 0;
 }
-.brand h2{
-  font-size: 3rem;
-  font-style: italic;
-  font-weight: 500;
-  padding: 2rem 0;
-  color: rgba(218, 165, 32, 0.897);
-}
-.brand h4{
-  font-size: 30px;
-  font-weight: 300;
-}
-marquee{
-  padding-bottom: 6rem;
-}
-marquee img{
+.marquee img{
   filter: grayscale(100%);
-  height: 50px;
+  height: 70px;
 }
-marquee img:hover{
+.marquee img:hover{
   filter: grayscale(0);
 }
 .imgbg{
@@ -220,16 +217,18 @@ table th{
   }
 }
 @media (max-width: 800px) {
+  
   nav ul{
     display: none;
 
   }
-  
+  .creat{
+    padding: 2rem 3rem;
+  }
   .body-content{
-    padding: 4rem 2rem 0 2rem;
     margin-top: 5rem;
     h1{
-      font-size: 2rem;
+      font-size: 40px;
     }
   }
   .solution{
@@ -245,6 +244,9 @@ table th{
   .card{
     box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.082);
   
+  }
+  .learn{
+    margin-bottom: 5rem;
   }
   .learn-more a{
     margin: 2rem 0;
@@ -279,7 +281,7 @@ table th{
     padding: 5rem;
   }
   .imgbg h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .connect{
@@ -304,8 +306,14 @@ table th{
     margin-top: 3rem;
       
   }
+  .square{
+    width: 50%;
+    border: 0 solid black;
+    border-bottom: 1px;
+    height: 70px;
+  }
 }
-@media (max-width: 1020px) {
+@media screen and (min-width:800.1px)and (max-width: 1020px) {
   nav ul{
     display: none;
 
@@ -313,7 +321,7 @@ table th{
   .body-content{
     margin-top: 4rem;
     h1{
-      font-size: 3rem;
+      font-size: 50px;
     }
   }
   .solution{
@@ -325,10 +333,14 @@ table th{
    flex-direction: column;
    justify-content: space-around;
    gap: 2rem;
+   margin-bottom: 3rem;
   }
   .card{
     box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.082);
   
+  }
+  .learn{
+    margin-bottom: 6rem;
   }
   .learn-more a{
     margin: 2rem 0;
@@ -392,4 +404,151 @@ table th{
 
 
 /* about page */
+.header{
+  background-image: url("././assets/vcimg5.png");
+  backdrop-filter: blur(50px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 15rem 0;
+  h1{
+    font-size: 6rem;
+    color: white;
+  }
+  span{
+    font-style: italic;
+  }
+}
+.our-story{
+  padding: 3rem 6.8rem;
+}
+.story{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1{
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 500;
+    padding-right: 10px;
+  }
+  hr{
+    width: 55rem;
+    border-top: 2px solid black;
+  }
+}
+.story-content{
+  h4{
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+.division{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.division-h1{
+  font-size: 5rem;
+  font-weight: 500;
+  padding: 2rem;
+  font-style: italic;
+  color: rgba(218, 165, 32, 0.897);
+}
 
+.square{
+  width: 50%;
+  border: 2px  solid black;
+  border-bottom: 1px;
+  height: 70px;
+}
+.our-division{
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.mission{
+  text-align: center;
+  width: 50%;
+  h1{
+    padding: 20px 0;
+    font-size: 48px;
+  }
+  h4{
+    font-size: 18px;
+    font-weight: 500;
+    text-wrap: wrap;
+  }
+}
+.vission{
+  text-align: center;
+  width: 50%;
+  h1{
+    padding: 20px 0;
+    font-size: 48px;
+  }
+  h4{
+    font-size: 18px;
+    font-weight: 500;
+    text-wrap: wrap;
+  }
+}
+.line{
+  margin: 6rem 0 2rem 0;
+  border: 1px solid gray;
+  width: 80%;
+}
+.linee{
+  margin: 0rem 0 2rem 0;
+  border: 1px solid gray;
+  width: 80%;
+}
+.with-us{
+  display: flex;
+  text-align: center;
+  gap: 3rem;
+}
+.investor{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  h1{
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 500;
+    padding-right: 10px;
+    color: rgba(218, 165, 32, 0.897);
+  }
+  hr{
+    width: 70%;
+    border-top: 2px solid black;
+  }
+}
+
+@media (max-with:800px) {
+  .header{
+    background-image: url("././assets/uni.png");
+    backdrop-filter: blur(50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 1rem 0;
+    h1{
+      font-size: 6rem;
+      color: white;
+    }
+    span{
+      font-style: italic;
+    }
+  }
+}
