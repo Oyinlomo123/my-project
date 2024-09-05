@@ -357,14 +357,30 @@ table th{
  padding:40px 0px;
  gap: 1.5rem;
 }
-
+/* career page */
+.not-found{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  h1{
+    font-size: 5rem;
+    font-weight: 200;
+  }
+}
+.partner-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
 @media (max-width:567px) {
   nav ul{
     display: none;
 
   }
   .creat{
-    padding: 3rem 3rem;
+    padding: 3rem 1.5rem;
   }
   .body-content{
     margin-top: 5rem;
@@ -397,7 +413,7 @@ table th{
   .imgbg{
     height: 200px;
     border-radius: 0 10rem 0px 0;
-    padding: 5rem;
+    padding: 3rem;
     margin-top: 7rem;
   }
   .imgbg h1{
