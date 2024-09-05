@@ -109,16 +109,6 @@ a{
   margin: 4rem 0;
 }
 
-.marquee{
-  padding:40px 0;
-}
-.marquee img{
-  filter: grayscale(100%);
-  height: 70px;
-}
-.marquee img:hover{
-  filter: grayscale(0);
-}
 .imgbg{
   background-image: url('./assets/uni.png');
   backdrop-filter: blur(10px);
@@ -214,190 +204,6 @@ table th{
     align-items: center;
     justify-content: center;
 
-  }
-}
-@media (max-width: 800px) {
-  
-  nav ul{
-    display: none;
-
-  }
-  .creat{
-    padding: 2rem 3rem;
-  }
-  .body-content{
-    margin-top: 5rem;
-    h1{
-      font-size: 40px;
-    }
-  }
-  .solution{
-    font-size: 24px;
-    padding-bottom: 30px ;
-  }
-  .cards{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   gap: 2rem;
-  }
-  .card{
-    box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.082);
-  
-  }
-  .learn{
-    margin-bottom: 5rem;
-  }
-  .learn-more a{
-    margin: 2rem 0;
-  }
-  .brand{
-    margin-top: 5rem;
-  }
-  .brand h2{
-    font-size: 3rem;
-  }
-  .brand h4{
-    font-size: 20px;
-  }
-  marquee{
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-  }
-  marquee img{
-    filter: grayscale(100%);
-    height: 50px;
-  }
-  marquee img:hover{
-    filter: grayscale(0);
-  }
-  .imgbg{
-    background-image: url('./assets/uni.png');
-    backdrop-filter: blur(10px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    border-radius: 0 10rem 0px 0;
-    padding: 5rem;
-  }
-  .imgbg h1{
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-  .connect{
-    padding-top: 50px;
-    margin-bottom: 40px;
-  }
-  .connect h1{
-    font-size: 3rem;
-    padding: 1rem 0;
-  }
- 
-  footer{
-    border-radius: 0 10rem 0 0 ;
-  }
-  
-  table th{
-    display: flex;
-  }
-  
-  .get{
-    text-align: center;
-    margin-top: 3rem;
-      
-  }
-  .square{
-    width: 50%;
-    border: 0 solid black;
-    border-bottom: 1px;
-    height: 70px;
-  }
-}
-@media screen and (min-width:800.1px)and (max-width: 1020px) {
-  nav ul{
-    display: none;
-
-  }
-  .body-content{
-    margin-top: 4rem;
-    h1{
-      font-size: 50px;
-    }
-  }
-  .solution{
-    font-size: 24px;
-    padding-bottom: 30px ;
-  }
-  .cards{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   gap: 2rem;
-   margin-bottom: 3rem;
-  }
-  .card{
-    box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.082);
-  
-  }
-  .learn{
-    margin-bottom: 6rem;
-  }
-  .learn-more a{
-    margin: 2rem 0;
-  }
-  .brand{
-    margin-top: 5rem;
-  }
-  .brand h2{
-    font-size: 3rem;
-  }
-  .brand h4{
-    font-size: 20px;
-  }
-  marquee{
-    padding-bottom: 4rem;
-  }
-  marquee img{
-    filter: grayscale(100%);
-    height: 50px;
-  }
-  marquee img:hover{
-    filter: grayscale(0);
-  }
-  .imgbg{
-    background-image: url('./assets/uni.png');
-    backdrop-filter: blur(10px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    border-radius: 0 10rem 0px 0;
-    padding: 5rem;
-  }
-  .imgbg h1{
-    font-size: 3rem;
-    font-weight: 600;
-  }
-  .connect{
-    padding-top: 50px;
-    margin-bottom: 40px;
-  }
-  .connect h1{
-    font-size: 3rem;
-    padding: 1rem 0;
-  }
- 
-  footer{
-    border-radius: 0 10rem 0 0 ;
-  }
-  
-  table th{
-    display: flex;
-  }
-  
-  .get{
-    text-align: center;
-    margin-top: 3rem;
-      
   }
 }
 
@@ -532,20 +338,350 @@ table th{
   }
 }
 
-@media (max-with:800px) {
+
+.marquee img{
+  filter: grayscale(100%);
+  height: 40px;
+  
+}
+.marquee img:hover{
+  filter: grayscale(0);
+}
+.marquee{
+ display: flex;   
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ padding:40px 0px;
+ gap: 1.5rem;
+}
+
+@media (max-width:567px) {
+  nav ul{
+    display: none;
+
+  }
   .header{
-    background-image: url("././assets/uni.png");
+    background-image: url("././assets/vcimg5.png");
     backdrop-filter: blur(50px);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 250px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5rem 0 0 3rem;
+    border-radius: 0 0 7rem 0;
+    h1{
+      font-size: 2rem;
+      color: white;
+    }
+    span{
+      font-style: italic;
+    }
+  }
+  .our-story{
+    padding: 3rem 2rem;
+  }
+  .story{
+    h1{
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+    hr{
+      width: 55rem;
+      border-top: 2px solid black;
+    }
+  }
+  
+  .division{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .division-h1{
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .square{
+    display: none;
+  }
+  .our-division{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .mission{
+    text-align: center;
+    width: 100%;
+    h1{
+      padding: 20px 0;
+      font-size: 40px;
+    }
+    h4{
+      font-size: 18px;
+      font-weight: 500;
+      text-wrap: wrap;
+    }
+  }
+  .vission{
+    text-align: center;
+    width: 100%;
+    h1{
+      padding: 20px 0;
+      font-size: 40px;
+    }
+    h4{
+      font-size: 18px;
+      font-weight: 500;
+      text-wrap: wrap;
+    }
+  }
+  .line{
+    margin: 3rem 0 2rem 0;
+    border: 1px solid gray;
+    width: 80%;
+  }
+  .linee{
+    margin: 0rem 0 2rem 0;
+    border: 1px solid gray;
+    width: 80%;
+  }
+  .with-us{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:0rem;
+  }
+  .investor{
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 0 1rem 0;
+    width: 100%;
     h1{
-      font-size: 6rem;
+      font-size: 35px;
+      font-style: italic;
+      font-weight: 500;
+      padding-right: 10px;
+      color: rgba(218, 165, 32, 0.897);
+    }
+    hr{
+      width: 70%;
+      border-top: 2px solid black;
+    }
+  }
+  footer{
+    width: 100%;
+    background: #000;
+    border-radius: 0 10rem 0 0 ;
+    padding: 5rem 4rem;
+  }
+  table th{
+    display: flex;
+  }
+}
+@media screen and (min-width:567.1px) and (max-width: 991px) {
+  
+  nav ul{
+    display: none;
+
+  }
+  .creat{
+    padding: 2rem 3rem;
+  }
+  .body-content{
+    margin-top: 5rem;
+    h1{
+      font-size: 40px;
+    }
+  }
+  .solution{
+    font-size: 24px;
+    padding-bottom: 30px ;
+  }
+  .cards{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 2rem;
+  }
+  .card{
+    box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.082);
+  
+  }
+  .learn{
+    margin-bottom: 5rem;
+  }
+  .learn-more a{
+    margin: 2rem 0;
+  }
+  .brand{
+    margin-top: 5rem;
+  }
+  .brand h2{
+    font-size: 3rem;
+  }
+  .brand h4{
+    font-size: 20px;
+  }
+
+  .imgbg{
+    background-image: url('./assets/uni.png');
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 0 10rem 0px 0;
+    padding: 5rem;
+  }
+  .imgbg h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .connect{
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+  .connect h1{
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+ 
+  footer{
+    border-radius: 0 10rem 0 0 ;
+  }
+  
+  table th{
+    display: flex;
+  }
+  
+  .get{
+    text-align: center;
+    margin-top: 3rem;
+      
+  }
+  .header{
+    background-image: url("././assets/vcimg5.png");
+    backdrop-filter: blur(50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 7rem;
+    border-radius: 0 0 7rem 0;
+    padding-left: 3rem;
+    h1{
+      font-size: 3rem;
       color: white;
+    }
+    span{
+      font-style: italic;
+    }
+  }
+  .our-story{
+    padding: 3rem 2rem;
+  }
+  .story{
+    h1{
+      font-size: 45px;
+      padding-bottom: 20px;
+    }
+  
+  }
+}
+
+
+@media screen and (min-width:991.1px)and (max-width: 1199px) {
+
+  .body-content{
+    margin-top: 4rem;
+    h1{
+      font-size: 50px;
+    }
+  }
+  .solution{
+    font-size: 24px;
+    padding-bottom: 30px ;
+  }
+  .cards{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 2rem;
+   margin-bottom: 3rem;
+  }
+  .card{
+    box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.082);
+  
+  }
+  .learn{
+    margin-bottom: 6rem;
+  }
+  .learn-more a{
+    margin: 2rem 0;
+  }
+  .brand{
+    margin-top: 5rem;
+  }
+  .brand h2{
+    font-size: 3rem;
+  }
+  .brand h4{
+    font-size: 20px;
+  }
+  .imgbg{
+    background-image: url('./assets/uni.png');
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 0 10rem 0px 0;
+    padding: 5rem;
+  }
+  .imgbg h1{
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .connect{
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+  .connect h1{
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+ 
+  footer{
+    border-radius: 0 10rem 0 0 ;
+  }
+  
+  
+  
+  .get{
+    text-align: center;
+    margin-top: 3rem;
+      
+  }
+   
+  .header{
+    height: 400px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 7rem 0 0 3rem;
+    border-radius: 0 0 7rem 0;
+    h1{
+      font-size: 5rem;
+      color: white;
+      font-weight: 400;
+      line-height: 90px;
     }
     span{
       font-style: italic;

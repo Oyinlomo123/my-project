@@ -3,6 +3,8 @@ import juniper from"../../assets/juniper.png"
 import molex from "../../assets/molex.png"
 import novotel from "../../assets/novotel.png"
 import samsung from "../../assets/samsung.png"
+import polycom from "../../assets/polycom.png"
+import logitech from "../../assets/logitech.png"
 
 const About = () => {
   return (
@@ -61,8 +63,8 @@ const About = () => {
           <img src={samsung} alt="" />
           <img src={Amp} alt="" />
           <img src={molex} alt="" />
-          <img src={novotel} alt="" />
-          <img src={juniper} alt="" />
+          <img src={logitech} alt="" />
+          <img src={polycom} alt="" />
           <img src={novotel} alt="" />
           <img src={juniper} alt="" />
       </div>
