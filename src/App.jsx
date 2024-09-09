@@ -7,17 +7,47 @@ import About from "./view/about/About"
 import Career from "./view/career/Career"
 import Partner from "./view/partner/Partner"
 const App = () => {
+
+  const menu =()=>{
+    var menuState = document.getElementById('smallNav')
+    var style = window.getComputedStyle(menuState);
+    var menu = document.getElementById('menu')
+    console.log(style.display)
+    if (style.display=="block"){
+      menuState.style.display = "none"
+      menu.innerText = '☰';
+    }else{
+      menuState.style.display = "block"
+      menu.innerText = '✖'; 
+    }
+    
+  }
+
+  
   return (
-    <>
+    <div>
+   
       <nav>
         <img src={logo} alt="" />
-        <ul>
+        <ul className="nav-link" id="navbar">
           <Link to="/">OUR SOLUTION</Link>
           <Link to="/about"> ABOUT </Link>
           <Link to="/career">CAREER</Link>
-          <Link to="/partner" className='partner'>PARTNER WITH US <i class="ri-arrow-right-line"></i></Link>
+          <Link to="/partner" className='partner'>PARTNER WITH US <i class="ri-arrow-right-line"></i> </Link>
         </ul>
+        <button id="menu" onClick={menu}><i class="ri-menu-line"></i>
+        <i id="close" class="ri-close-large-fill"></i></button>
+        
+        <div className="small-nav" id="smallNav">
+        <ul className="small-nav-ul">
+          <Link to="/">OUR SOLUTION</Link><hr/>
+          <Link to="/about"> ABOUT </Link><hr/>
+          <Link to="/career">CAREER</Link><hr/>
+          <Link to="/partner" className=''>PARTNER WITH US <i class="ri-arrow-right-line"></i></Link>
+        </ul>
+        </div>
       </nav>
+      
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path="/about" element={<About/>}/>
@@ -55,7 +85,7 @@ const App = () => {
         </div>
       </div>
     </footer>
-    </>
+    </div>
   )
 }
 

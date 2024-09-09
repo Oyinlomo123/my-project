@@ -1,4 +1,3 @@
-
 import logo from "../../assets/image.png"
 import { Link } from "react-router-dom"
 import Layout from "../../component/Layout"
