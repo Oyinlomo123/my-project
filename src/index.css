@@ -602,7 +602,7 @@ table th{
   }
   
 } */
- /* @media (max-width:567px) {
+ @media (max-width:567px) {
 
   .nav-link{
     display: none;
@@ -785,8 +785,8 @@ table th{
     display: flex;
   }
   
-}  */
- @media (max-width: 991px) {
+} 
+ @media screen and (min-width:567.1px) and (max-width: 991px) {
   
   .nav-link{
     display: none;
@@ -847,8 +847,7 @@ table th{
     padding: 5rem;
   }
   .imgbg h1{
-    font-size: 2.5rem;
-    text-wrap: wrap;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .connect{
@@ -878,7 +877,7 @@ table th{
     backdrop-filter: blur(50px);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 250px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -903,31 +902,10 @@ table th{
     }
   
   }
-  .division{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-  }
-  .division-h1{
-    font-size: 3rem;
-    padding: 2rem;
-  }
-  .square{
-    display: none;
-  }
-  .our-division{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
 }
 
 
-/* @media screen and (min-width:991.1px)and (max-width: 1199px) {
+@media screen and (min-width:991.1px)and (max-width: 1199px) {
   .creat{
     padding: 5rem ;
   }
@@ -1018,4 +996,4 @@ table th{
       font-style: italic;
     }
   }
-}  */
+} 
