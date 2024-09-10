@@ -12,7 +12,8 @@ const Home = () => {
          that want to <span> with them</span></h1><br/>
         <button className="btn">PARTNER WITH US <i class="ri-arrow-right-line"></i></button>
         </div>
-        
+        <div>
+        <h2 className="solution">OUR SOLUTION</h2>
         <div className="all-card">
         <div className="cards">
         <div className="card">
@@ -38,18 +39,19 @@ const Home = () => {
         </div>
         </div>
         </div>
+
         <div className="learn">
-        <h5 className="learn-more"><Link>Learn more <i class="ri-arrow-right-line"></i></Link></h5>
+        <h5 className="learn-more"><a href="#">Learn more <i class="ri-arrow-right-line"></i></a></h5>
         </div>
       </div>
-     
+     </div>
     </div>
   
     <div className="imgbg">
       <h1>We reach <span>100 million</span> <br/> consumers every month.</h1>
      </div>
      <div className="connect">
-      <h1>Connect with Telvida on a <br></br>deeper level.<button>ABOUT US <i class="ri-arrow-right-line"></i></button></h1>
+      <h1>Connect with Telvida on a <br></br>deeper level.<a href="/about"><button> ABOUT US<i class="ri-arrow-right-line"></i></button></a></h1>
      </div>
     
   </> 

@@ -107,7 +107,7 @@ a{
 }
 .solution{
   font-size: 36px;
-  padding: 30px 0;
+  padding: 30px 6rem;
 }
 .all-card{
   display: flex;
@@ -121,7 +121,7 @@ a{
 }
 .card{
   background-color: white;
-  padding: 2rem 3rem;
+  padding: 3rem 3rem;
   border-radius: 0 20px;
   box-shadow:2px 5px 15px 5px rgba(0, 0, 0, 0.4);
   h2{
@@ -134,6 +134,7 @@ a{
     font-size: 18px;
     font-weight: 400;
     text-wrap: wrap;
+    padding-bottom: 2rem;
   }
 }
 .learn{
@@ -154,7 +155,9 @@ a{
   width: 100%;
   height: 500px;
   border-radius: 0 15rem 0px 0;
-  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .imgbg h1{
   font-size: 5rem;
@@ -177,6 +180,7 @@ a{
   border-radius: 50px;
   font-size: 24px;
   color: white;
+  cursor: pointer;
 }
 footer{
   width: 100%;
@@ -189,6 +193,7 @@ footer{
 footer img{
   height: 80px;
   padding: 0;
+  cursor: pointer;
 }
 footer a{
   color: gray;
@@ -403,12 +408,84 @@ table th{
     font-weight: 200;
   }
 }
+/*partner with us*/
 .partner-content{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
+  justify-content:space-around;
+  align-items: start;
+  width: 100%;
+  margin-top: 6rem;
+  padding: 5rem;
 }
+.appreciate{
+  width: 50%;
+  h1{
+    font-size: 5rem;
+  }
+}
+.whole-form{
+  width: 50%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  border-radius: 5rem 0 0 0 ;
+}
+
+.names{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-partner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3rem;
+  input{
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  textarea{
+    padding: 10px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  button{
+    width: 200px;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background: rgba(218, 165, 32, 0.897);
+  }
+}
+.ourclient{
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  h1{
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 10px;
+    color: rgba(218, 165, 32, 0.897);
+  }
+}
+.client{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.client img{
+  height: 90px;
+  filter: grayscale(100%);
+}
+
 @keyframes menu {
   from {
     height: 0;
@@ -784,7 +861,87 @@ table th{
   table th{
     display: flex;
   }
+  .partner-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding: 0rem;
+  }
+  .appreciate{
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    h1{
+      font-size:3rem;
+    }
+  }
+  .whole-form{
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    border-radius: 3rem 0 0 0 ;
+    padding: 0;
+    
+  }
   
+  .names{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .form-partner{
+    width: 100%;
+    padding: 1rem;
+    input{
+      font-size: 18px;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    textarea{
+      padding: 10px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+    button{
+      width: 200px;
+      font-size: 24px;
+      padding: 10px;
+      border-radius: 30px;
+      border: none;
+      background: rgba(218, 165, 32, 0.897);
+    }
+  }
+  .ourclient{
+    margin: 4rem 0;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    h1{
+      font-size: 5rem;
+      font-style: italic;
+      font-weight: 400;
+      padding-left: 10px;
+      color: rgba(218, 165, 32, 0.897);
+    }
+  }
+  .client{
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .client img{
+    height: 60px;
+    filter: grayscale(100%);
+  }
 } 
  @media screen and (min-width:567.1px) and (max-width: 991px) {
   
@@ -847,7 +1004,7 @@ table th{
     padding: 5rem;
   }
   .imgbg h1{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
   }
   .connect{
