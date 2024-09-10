@@ -51,7 +51,7 @@ const Home = () => {
       <h1>We reach <span>100 million</span> <br/> consumers every month.</h1>
      </div>
      <div className="connect">
-      <h1>Connect with Telvida on a <br></br>deeper level.<a href="/about"><button> ABOUT US<i class="ri-arrow-right-line"></i></button></a></h1>
+      <h1>Connect with Telvida on a <br></br>deeper level.<Link to="/about"><button> ABOUT US<i class="ri-arrow-right-line"></i></button></Link></h1>
      </div>
     
   </> 

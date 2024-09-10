@@ -28,20 +28,20 @@ const File = () => {
        <nav>
         <img src={logo} alt="" />
         <ul className="nav-link" id="navbar">
-          <a href="/">OUR SOLUTION</a>
-          <a href="/about"> ABOUT </a>
-          <a href="/career">CAREER</a>
-          <a href="/partner" className='partner'>PARTNER WITH US <i class="ri-arrow-right-line"></i> </a>
+          <Link to="/">OUR SOLUTION</Link>
+          <Link to="/about"> ABOUT </Link>
+          <Link to="/career">CAREER</Link>
+          <Link to="/partner" className='partner'>PARTNER WITH US <i class="ri-arrow-right-line"></i> </Link>
         </ul>
         <button id="menu" onClick={menu}><i class="ri-menu-line"></i>
         <i id="close" class="ri-close-large-fill"></i></button>
         
         <div className="small-nav" id="smallNav">
         <ul className="small-nav-ul">
-          <a href="/">OUR SOLUTION</a><hr/>
-          <a href="/about"> ABOUT </a><hr/>
-          <a href="/career">CAREER</a><hr/>
-          <a href="/partner" className=''>PARTNER WITH US <i class="ri-arrow-right-line"></i></a>
+          <Link to="/">OUR SOLUTION</Link><hr/>
+          <Link to="/about"> ABOUT </Link><hr/>
+          <Link to="/career">CAREER</Link><hr/>
+          <Link to="/partner" className=''>PARTNER WITH US <i class="ri-arrow-right-line"></i></Link>
         </ul>
         </div>
       </nav>
@@ -54,20 +54,20 @@ const File = () => {
       <Route path="/partner" element={<Partner/>}/>
     </Routes>
     <footer>
-    <a href="/"><img src={logo} alt="" /></a>
+    <Link to="/"><img src={logo} alt="" /></Link>
       <div className="footer-nav">
        <table>
         <tr>
-          <th> <a href="/">OUR SOLUTION</a></th>
-          <th> <a href="/partner">PARTNER WITH US</a></th>
+          <th> <Link to="/">OUR SOLUTION</Link></th>
+          <th> <Link to="/partner">PARTNER WITH US</Link></th>
         </tr>
         <tr>
-        <th> <a href="/career">CAREERS</a></th>
-        <th> <a href="#">AFFILIATE<br/> PARTNERSHIP</a></th>
+        <th> <Link to="/career">CAREERS</Link></th>
+        <th> <Link tof="#">AFFILIATE<br/> PARTNERSHIP</Link></th>
         </tr>
         <tr>
-        <th> <a href= "/about">ABOUT</a></th>
-        <th> <a href="/partner">PARTNER WITH US</a></th>
+        <th> <Link to= "/about">ABOUT</Link></th>
+        <th> <Link to="/partner">PARTNER WITH US</Link></th>
         </tr>
        </table>
        <div className="social-media">
